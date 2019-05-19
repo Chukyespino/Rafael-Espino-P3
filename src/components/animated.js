@@ -1,46 +1,45 @@
-import React from 'react';
-import { Animated, Text, View } from 'react-native';
+// const { Component } = require('react');
+// const {
+//   Animated, Easing
+// } = require('react-native');
 
-class FadeInView extends React.Component {
-  state = {
-    fadeAnim: new Animated.Value(0),  // Initial value for opacity: 0
-  }
 
-  componentDidMount() {
-    Animated.timing(                  // Animate over time
-      this.state.fadeAnim,            // The animated value to drive
-      {
-        toValue: 1,                   // Animate to opacity: 1 (opaque)
-        duration: 10000,              // Make it take a while
-      }
-    ).start();                        // Starts the animation
-  }
+// class SlidingBox extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.slideIn = Animated.timing(
+//       this.state.slide,
+//       { toValue: {x: 200, y: 0},
+//         duration:2000,
+//         delay: 1000,
+//         easing: Easing.in(Easing.ease) }
+//     )
+//     this.state = {
+//       slide: new Animated.ValueXY({ x: 0, y: 0 })
+//     }
+//   }
+//   render() {
+//     const slideStyle = 
+//     this.state.slide.getTranslateTransform();
 
-  render() {
-    let { fadeAnim } = this.state;
+//     return(
+//       <Animated.View style={slideStyle}>
+//         <Text>my box </Text>
+//       </Animated.View>
+//     );
+//   }
+//   componentDidMount() {
+//     this.slideIn.start();
+//   }
+// }
 
-    return (
-      <Animated.View                 // Special animatable View
-        style={{
-          ...this.props.style,
-          opacity: fadeAnim,         // Bind opacity to animated value
-        }}
-      >
-        {this.props.children}
-      </Animated.View>
-    );
-  }
-}
+// export default SlidingBox
 
-// You can then use your `FadeInView` in place of a `View` in your components:
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <FadeInView style={{width: 250, height: 50, backgroundColor: 'powderblue'}}>
-          <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>Fading in</Text>
-        </FadeInView>
-      </View>
-    )
-  }
-}
+// Window.onload(() => {
+//   const box = document
+//   .getElementsByClassName(
+//     'slideIn').item(0);
+
+//     box.style.transform = 'translate(200px, 0px)';
+  
+// })

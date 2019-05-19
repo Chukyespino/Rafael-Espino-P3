@@ -1,7 +1,8 @@
 import React from "react"
 import { RadioGroup, RadioButton } from 'react-radio-buttons'
+// import * as Animatable from 'react-native-animatable'
 
-var score = [0,1,2,3,4];
+ var score = [0,1,2,3,4];
 
 
 
@@ -24,12 +25,13 @@ function addOne(){
 //   score[0] + 1
 //  }
 
-const QuizButtons = () => (
+const QuizButtons = (Text ) => (
     <div className="move">
     <RadioGroup horizontal>
-  <RadioButton on>
-    1 
+  <RadioButton  >
+    1
   </RadioButton>
+
   <RadioButton value="2"  onClick={() => {
          addOne()
     }}>

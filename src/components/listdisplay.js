@@ -1,8 +1,9 @@
 import React from 'react'
 import List from "../../src/pages/list"
 import { ThemeProvider } from "styled-components"
-import styled from 'styled-components'
 import theme from './themes'
+import styled from 'styled-components'
+
 
 const Red = styled.div`
   color: ${props => props.theme.themecolor};
