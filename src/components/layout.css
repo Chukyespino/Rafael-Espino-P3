@@ -2,34 +2,75 @@ html {
   font-family: woff;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  
 }
 body {
   
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  background-color: rgb(252, 252, 252)
+  background-color: #E9E9E9;
+}
+.slideIn{
+  transform: translate(40px, 0px);
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease-in;
+  transition-delay: 1s;
 }
 .P{
+ 
+  
+    /*************************************/
+  /*************************************/
+  background-color: rgb(255, 250, 250);
+  margin-top: 0px;
+  height: 450px;
+  width: 650px;
   font-size: 20px;
   float: left;
+  padding: 20px;
+  box-shadow: 5px 10px 18px #888888;
 }
 .P2{
+
+    /*************************************/
+  margin-top: 550px;
+  margin-left: -650px;
+  margin-bottom: 50px;
+  box-shadow: 5px 10px 18px #888888;
   
   float: left;
 }
 .pictures{
+ 
+
+  /*************************************/
+  margin-right: 300px;
+  box-shadow: 5px 10px 18px #888888;
   
   float: right;
 }
 .secondP{
+  background-color: rgb(255, 250, 250);
   font-size: 20px;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-right: 300px;
+  padding: 20px;
+  padding-bottom: 60px;
   float: right;
+  height: 300px;
+  width: 565px;
+  box-shadow: 5px 10px 18px #888888;
 }
 .trdP{
   
+  background-color: rgb(255, 250, 250);
+  margin-bottom: 0px;
   font-size: 20px;
-  margin-bottom: 50px
+  padding: 20px;
+  padding-bottom: 0px;
+  height: 300px;
+  width: 659px;
 }
 .listTop {
   
@@ -40,7 +81,6 @@ body {
 }
 .quizSet{
   margin-left: 40px;
- 
 }
 .submitB{
   float: left;
@@ -57,7 +97,13 @@ body {
   color:lightslategray
   
 }
-
+.PQ{
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 30px;
+  padding-bottom: 200px;
+  
+}
 .move{
 
   margin-left: 50px
