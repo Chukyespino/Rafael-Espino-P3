@@ -1,11 +1,12 @@
 import React from 'react'
+import styled from 'styled-components'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import QuizB from "../components/quizButtons"
 import { transitions, positions, Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
 import Alerts from '../components/alert'
-import styled from 'styled-components'
+import DB from '../components/buttons'
 
 
 const Question = styled.div`
@@ -19,8 +20,7 @@ const Question = styled.div`
   border-radius: 25px;
   box-shadow: 5px 10px 18px #888888;
   padding: 30px;
-  
-  margin-bottom:10px;
+  margin-bottom:30px;
   `;
  
 
@@ -28,7 +28,6 @@ const Question = styled.div`
  background-color: whitesmoke;
  border: 1px solid;
  width:75%;
-
  font-size: 30px;
  display: block; 
  border-radius: 25px;
@@ -54,11 +53,11 @@ const quizPage = () => (
     <SEO title="Quiz" />
     
     
-   
-    <div id="main"> 
-    <form name="quiz" onSubmit="return onSubmit">
+   <div>
+    <ul id="main"> 
     
-     <Title><h2>How good are you at taking care of yourself?  5 = More True; 1 = Less True</h2></Title>
+    
+     <Title><h2>How good are you at taking care of yourself? <br/> 5 = More True; 1 = Less True</h2></Title>
      
       <Question> 1.I take time of myself every day. <br/> <br/>
       <QuizB/> </Question>
@@ -79,19 +78,20 @@ const quizPage = () => (
       <QuizB/></Question>
       
       <Question >7. I take care of my body:
-      <br/><br/>
-      <ul>a. I get 7-8 hours of sleep every night.
-      <QuizB/></ul>
       <br/>
-      <ul>b. I brush and floss my teeth and practice good hygiene  
-      <QuizB /></ul>
-      <br/>
-      <ul>c. I eat approximately 5 fruits and veggies a day  
-      <QuizB/></ul>
-      <br/>
-      <ul>d. I limit junk food/fast food consumption. 
-      <QuizB/></ul></Question>
-      <br/>
+      <ul>a. I get 7-8 hours of sleep every night.</ul><br/>
+      <QuizB/><br/> 
+     
+      <ul>b. I brush and floss my teeth and practice good hygiene</ul>  <br/>
+      <QuizB /><br/> 
+      
+      <ul>c. I eat approximately 5 fruits and veggies a day </ul> <br/> 
+      <QuizB/><br/> 
+      
+      <ul>d. I limit junk food/fast food consumption. </ul><br/> 
+      <QuizB/>
+      </Question>
+    
       <Question>8.My hair, nails and appearance are good, and I like most things in my wardrobe. 
       <QuizB/></Question>
       
@@ -116,24 +116,12 @@ const quizPage = () => (
       <Question> 15.I know what I am passionate about. 
       <QuizB/></Question>
       
-      
-      <AlertProvider template={AlertTemplate} {...options}
-      
-      >
-        <Alerts></Alerts>
-        <button 
-        className="submitB" 
-        onClick={() => {
-         window.location.href="./results"
-    }}
-        > Results
-        </button>
-    
-  </AlertProvider>
-  
-  </form>
+      <AlertProvider template={AlertTemplate} {...options}>
+        <Alerts/>
+        <DB/>
+     </AlertProvider>
+    </ul>
     </div>
-    
   </Layout>
 )
 

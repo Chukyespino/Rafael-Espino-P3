@@ -1,5 +1,10 @@
 import React from "react"
 import { RadioGroup, RadioButton } from 'react-radio-buttons'
+import styled from 'styled-components'
+import { ThemeProvider } from "styled-components"
+import theme from './themes'
+
+
 // import * as Animatable from 'react-native-animatable'
 
  var score = [0,1,2,3,4];
@@ -12,25 +17,19 @@ function addOne(){
  console.log("here")
 
 }
-// function add2(){
-//   score[0] + 1
-//  }
-//  function add3(){
-//   score[0] + 1
-//  }
-//  function add4(){
-//   score[0] + 1
-//  }
-//  function add5(){
-//   score[0] + 1
-//  }
+const Move = styled.div`
+margin-left: ${props => props.theme.marginS};
+
+
+`
 
 const QuizButtons = (Text ) => (
-    <div className="move">
+  <ThemeProvider theme={theme}>
+    <Move>
     <RadioGroup horizontal>
   <RadioButton  >
     1
-  </RadioButton>
+  </RadioButton> 
 
   <RadioButton value="2"  onClick={() => {
          addOne()
@@ -48,7 +47,8 @@ const QuizButtons = (Text ) => (
   </RadioButton>
 
 </RadioGroup>
-  </div>
+ </Move>
+</ThemeProvider>
   
 )
 

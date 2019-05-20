@@ -10,18 +10,9 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #E9E9E9;
 }
-.slideIn{
-  transform: translate(40px, 0px);
-  transition-property: transform;
-  transition-duration: 2s;
-  transition-timing-function: ease-in;
-  transition-delay: 1s;
-}
+
 .P{
  
-  
-    /*************************************/
-  /*************************************/
   background-color: rgb(255, 250, 250);
   margin-top: 0px;
   height: 450px;
@@ -35,7 +26,7 @@ body {
 
     /*************************************/
   margin-top: 550px;
-  margin-left: -650px;
+  margin-left: -690px;
   margin-bottom: 50px;
   box-shadow: 5px 10px 18px #888888;
   
@@ -72,76 +63,7 @@ body {
   height: 300px;
   width: 659px;
 }
-.listTop {
-  
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  
-}
-.quizSet{
-  margin-left: 40px;
-}
-.submitB{
-  float: left;
-  background-color: transparent;
-  border: 4px solid;
-  border-radius: 15px;
-  padding: 10px;
-  margin-bottom: 50px;
-  border-color: rgb(140, 253, 140);
-  margin-left: 50px;
-  margin-top: 30px;
-  font:bold;
-  font-size: 20px;
-  color:lightslategray
-  
-}
-.PQ{
-  font-size: 20px;
-  background-color: rgb(255, 255, 255);
-  padding-top: 30px;
-  padding-bottom: 200px;
-  
-}
-.move{
 
-  margin-left: 50px
-}
-.quiz {
-  background-color: rgb(111, 200, 241);
-  color: papayawhip;
-  border-radius: 15px;
-  margin-top: 10px;
-  margin-left: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.quiz:hover {
-  background-color: rgb(243, 157, 178);
-}
-
-.quiz:focus {
-
-  background-color: rgb(70, 247, 0)
-}
-
-.listMain .listHeader input {
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 10px;
-  border: 2px solid rgb(37, 25, 204);
-  width: 150px;
-}
-
-
-.listMain .listHeader button .openButton:hover {
-  
-  background-color:rgb(14, 91, 192);
-  border: 2px solid rgb(54, 54, 172);
-  color: papayawhip
-  
-}
 
 .listMain .theList li {
   
@@ -160,11 +82,6 @@ body {
   cursor: pointer;
 
 }
-.theList {
-
-  float: center;
-  padding-left: 0;
-}
 
 
 textarea {
@@ -177,11 +94,12 @@ textarea {
   width:0;
   position: fixed; 
   z-index: 1;
-  border: 5px solid;
-  border-color: rgba(0, 247, 255, 0.712);
+  border: 1px solid;
+  border-color: black;
+  box-shadow: 5px 10px 18px #888888;
   border-radius: 15px;
   left: 0;
-  background-image: transparent;
+  background-color: rgb(255, 250, 250);
   overflow-x: hidden; 
   padding-top: 0px; 
   transition: 0.5s; 
@@ -205,7 +123,7 @@ textarea {
 .sidenav .closebtn  {
   margin-top: -40px;
   position: absolute;
-  color: rgba(0, 247, 255, 0.712);
+  color: black;
   right: 0px;
   font-size: 80px;
   

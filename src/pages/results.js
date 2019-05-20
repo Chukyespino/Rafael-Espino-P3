@@ -41,7 +41,7 @@ const resultsPage = () => (
     <div>
     <ul id="main">
     
-   <Title> Now look for your total score...</Title>
+   <Title> <h3> Now look for your total score...</h3></Title>
   
   <Results>
     <h1>72-90:</h1><br/>
