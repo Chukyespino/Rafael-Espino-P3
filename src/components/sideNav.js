@@ -6,7 +6,8 @@ background-color: transparent;
 border-style: none;
 margin-top: -40px;
 position: fixed;
-color: rgba(0, 247, 255, 0.712);
+color: black;
+
 font-size: 80px;
 `
 const SideNav = () => (
@@ -37,7 +38,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "100px";
   document.getElementById("openButton").style.border="transparent";
-  document.getElementById("openButton").style.color="rgba(0, 247, 255, 0.712)";
+  document.getElementById("openButton").style.color="black";
   
 }
 export default SideNav;
