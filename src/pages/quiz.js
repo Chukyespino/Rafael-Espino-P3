@@ -15,14 +15,20 @@ const Question = styled.div`
   border: 1px solid;
   position: 'fixed';
   font-size: 30px;
-  width: 75%;
-  display: block;
+  width: fixed;
+  display: inline-block;
   border-radius: 25px;
   box-shadow: 5px 10px 18px #888888;
   padding: 30px;
+  padding-right:30px;
   margin-bottom:30px;
   `;
- 
+
+const Buttons = styled.div`
+width: flex;
+display: inline;
+background-color: black;
+`
 
  const Title = styled.div`
  background-color: whitesmoke;
@@ -61,22 +67,22 @@ const quizPage = () => (
      
       <Question> 1.I take time of myself every day. <br/> <br/>
       <QuizB/> </Question>
-      
+      <br/> <br/>
       <Question>2.I make time for spirituality (in any form), mindfulness, or religious discipline. <br/> <br/>
       <QuizB /></Question>
       
       <Question>3.I limit the amount of television I watch each day. <br/> <br/> 
       <QuizB/></Question>
-      
+      <br/> <br/>
       <Question> 4.I limit the amount of Facebook/internet surfing I do each day.<br/> <br/> 
       <QuizB/>
-     </Question>
+     </Question><br/> <br/>
       <Question>5.I exercise at least 5 days a week for 30 minutes.<br/> <br/>
       <QuizB/> </Question>
-    
+      <br/> <br/>
       <Question> 6.I drink 6-8 glasses of water each day. <br/> <br/>
       <QuizB/></Question>
-      
+      <br/> <br/>
       <Question >7. I take care of my body:
       <br/>
       <ul>a. I get 7-8 hours of sleep every night.</ul><br/>
@@ -94,32 +100,38 @@ const quizPage = () => (
     
       <Question>8.My hair, nails and appearance are good, and I like most things in my wardrobe. 
       <QuizB/></Question>
-      
+      <br/> <br/>
       <Question>9.I generally wear clean clothes 
       <QuizB/></Question>
-      
+      <br/> <br/>
       <Question>10.I get together with a friend at least once a month and enjoy hobbies regularly. 
       <QuizB/>
      </Question>
       <Question>11.I have a relaxing routine before bed and a nurturing morning routine.  
-      <QuizB/></Question>
+      <QuizB/></Question><br/> <br/>
      
       <Question>12.I usually know what I need and what I am feeling.  
-      <QuizB/></Question>
+      <QuizB/></Question><br/> <br/>
      
       <Question> 13.My organized environment supports my goals. 
-      <QuizB/></Question>
+      <QuizB/></Question><br/> <br/>
       
       <Question> 14.I take frequent breaks and have something to look forward to every evening. 
-      <QuizB/></Question>
+      <QuizB/></Question><br/> <br/>
       
       <Question> 15.I know what I am passionate about. 
-      <QuizB/></Question>
-      
+      <QuizB/></Question><br/> <br/>
+
+     
       <AlertProvider template={AlertTemplate} {...options}>
-        <Alerts/>
-        <DB/>
+      <Buttons> 
+        <div > 
+        <DB/> <Alerts/>
+        </div>
+       </Buttons>
      </AlertProvider>
+     
+
     </ul>
     </div>
   </Layout>
