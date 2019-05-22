@@ -12,7 +12,7 @@ background-color: ${props => props.theme.backgroundcolor};
  height:${props => props.theme.height};
  font-size:${props => props.theme.font};
  margin-bottom:${props => props.theme.marginM};
- margin-left:${props => props.theme.marginL};
+ 
  margin-right:${props => props.theme.marginS};
  border-radius:${props => props.theme.radius} ;
  border-color:${props => props.theme.buttonBlue};

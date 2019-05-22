@@ -8,14 +8,21 @@ const Title = styled.div`
 color: ${props => props.theme.themecolor};
 background: ${props => props.theme.backgroundcolor};
 border: 1px solid;
+border-color: ${props => props.theme.themeRed} ;
+position: 'fixed';
+font-size: 500%;
 width:61%;
-font-size: 55px;
+float: center;
+
 display: block;
 border-radius: 25px;
+text-align: center;
+padding-right:220px;
+padding-left: 50px;
+padding-bottom: 10px;
 box-shadow: 5px 10px 18px #888888;
-padding-right:20px;
-padding-left: 20px;
-padding-bottom: 30px;
+
+margin-right: 30px;
 margin-bottom:50px;
 
 `

@@ -13,14 +13,14 @@ body {
 
 .P{
  
-  background-color: rgb(255, 250, 250);
+  /* background-color: rgb(255, 250, 250);
   margin-top: 0px;
   height: 450px;
   width: 650px;
   font-size: 20px;
   float: left;
   padding: 20px;
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 5px 10px 18px #888888; */
 }
 .P2{
 
@@ -120,6 +120,13 @@ textarea {
   color: #e91b1b5b;
 }
 
+.listMain .listHeader input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid rgb(37, 25, 204);
+  width: 150px;
+}
 .sidenav .closebtn  {
   margin-top: -40px;
   position: absolute;
@@ -140,3 +147,115 @@ textarea {
   .sidenav a {font-size: 18px;}
 }
 
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.aside-5 {
+  
+  
+  border-radius: 25px;
+  margin-top: 30px;
+  background-color: rgb(255, 250, 250);
+  font-size: 20px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.aside-4 {
+
+  display: flex;
+  background-color: rgb(255, 250, 250);
+  padding-right: 0px;
+  
+  
+}
+.aside-3 {
+  display: flex;
+  padding-right: 0px;
+  background-color: rgb(255, 250, 250);
+
+  
+}
+.aside-2 {
+  border-radius: 25px;
+  margin-top: 30px;
+  display: flex;
+  background-color: rgb(255, 250, 250);
+  font-size: 20px;
+  box-shadow: 5px 10px 18px #888888;
+  
+}
+
+.aside-1 {
+  border-radius: 25px;
+  margin-top: -30px;
+  display: flex;
+  background-color: rgb(255, 250, 250);
+  font-size: 20px;
+  box-shadow: 5px 10px 18px #888888;
+  
+}
+.sideA{
+  display: flex;  
+  font-size: flex;
+  width: 40%;
+  height: 460px;
+  margin-bottom: 200px;
+  margin-right: 50px;
+ margin-left: 20px;
+  padding: 20px;
+  background-color: rgb(255, 250, 250);
+  float: left;
+}
+.sideB{
+  margin-top: flex;
+ margin-right: flex;
+  margin-left: flex;
+  background-color: rgb(255, 250, 250);
+ 
+ 
+}
+.sideC{
+  background-color: rgb(255, 250, 250);
+  margin-top: flex;
+  margin-right: flex;
+   margin-left: 200px;
+
+}
+.sideD{
+  display: flex;  
+  font-size: flex;
+  width: 40%;
+  height: 460px;
+  margin-bottom: 200px;
+  margin-right: 50px;
+ margin-left: 20px;
+  padding: 20px;
+  background-color: rgb(255, 250, 250);
+  float: left;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 2 ; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .aside-2   { order: 2; }
+  .aside-3 { order: 3; }
+  .aside-4 { order: 4; }
+  .aside-5 { order: 5;}
+}
+
+body {
+  padding: 2em; 
+}
